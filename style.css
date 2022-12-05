@@ -1,0 +1,168 @@
+a {
+  text-decoration: none;
+}
+
+.menu_box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70vw;
+  margin: 5vh 15vw auto 15vw;
+  align-items: center;
+}
+
+.menu_list ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  column-gap: 2rem;
+}
+
+.menu_list a:hover {
+  border-bottom: 5px solid green;
+  color: green;
+}
+
+.foto img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.grid {
+  margin: 30px 15vw auto 15vw;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content min-content 1fr;
+  grid-template-areas:
+    "foto foto new"
+    "thebright tbread new"
+    "art01 art02 art03";
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+}
+
+.foto {
+  grid-area: foto;
+}
+
+.new {
+  grid-area: new;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  background-color: rgb(2, 2, 35);
+  color: white;
+}
+
+.new a {
+  color: white;
+  display: block;
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative a {
+  top: 1px;
+  width: 320px;
+  height: 100px;
+}
+
+.new a:hover {
+  color: gold;
+}
+
+.new h1 {
+  color: gold;
+  margin: 10px;
+}
+
+.new div {
+  flex: 1;
+  margin: 20px 5px;
+}
+
+.border {
+  border-bottom: 1px solid white;
+}
+
+.thebright {
+  grid-area: thebright;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.thebright h1 {
+  margin: 0;
+}
+
+.tbread {
+  grid-area: tbread;
+  display: flex;
+  flex-wrap: wrap;
+  color: grey;
+}
+
+.tbread p {
+  height: min-content;
+  margin: 0;
+}
+
+.tbread a {
+  box-sizing: border-box;
+  display: block;
+  margin-top: 0;
+  margin-left: 20px;
+  background-color: rgb(255, 50, 50);
+  color: white;
+  height: 50px;
+  width: 180px;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.tbread a:hover {
+  transform: scale(1.1);
+  background-color: red;
+}
+
+.art01 {
+  grid-area: art01;
+}
+
+.art02 {
+  grid-area: art02;
+}
+
+.art03 {
+  grid-area: art03;
+}
+
+.foot {
+  display: flex;
+}
+
+.foot img {
+  height: 150px;
+}
+.artt {
+  margin-left: 20px;
+}
+
+.artt h1 {
+  color: gray;
+  margin: 0;
+}
+
+.artt h2 {
+  margin: 0;
+}
+
+.artt p {
+  margin: 0;
+}
